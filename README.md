@@ -4,7 +4,7 @@
 - John Carr, jcarr3@nd.edu 
 - Longqing Chen, lchen9@nd.edu 
 - Jorge Visbal, jvisbal@nd.edu 
-- Parker Moore, pmoore@nd.edu 
+- Parker Moore, pmoore2@nd.edu 
 
 **Preternship Project Manager**
 - Bryan Ingwersen, bingwers@nd.edu

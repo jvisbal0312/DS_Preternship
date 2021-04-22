@@ -44,6 +44,12 @@ def simplify(expr):
 # TODO: function that output the equality of symbols
 
 # TODO: function that gets all the sub-terms
+def sub_terms(expr):
+'''Returns the sub-terms of an expression to make it easier to simplify
+
+>>> sub_terms('(((x|y)&~z)|x&y)')
+'Sub-terms of (((x|y)&~z)|x&y): [(x|y), ~z, x&yZZ]'
+'''
 
 # TODO: function that gets all symbols (can be used in simplify/evaluation/equality)
 
