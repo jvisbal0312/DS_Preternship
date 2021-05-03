@@ -22,3 +22,6 @@
 - [x] Boolean equations
 - [ ] Basic GUI
 - [ ] Animated GUI
+
+**Development Log**
+- [x] Add simple evaluation feature, Longqing, 05/02/21
