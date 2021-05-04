@@ -20,8 +20,17 @@
 
 **Project Deliverables**
 - [x] Boolean equations
-- [ ] Basic GUI
+- [x] Basic GUI
 - [ ] Animated GUI
 
 **Development Log**
 - [x] Add simple evaluation feature, Longqing, 05/02/21
+- [x] Add simplification feature, Longqing, 05/04/21
+- [ ] 
+
+**TODO List**
+
+- [ ] Dark/Light mode(labels)
+- [ ] K-map
+- [ ] Expression value animation
+- [ ] Waveform animation
