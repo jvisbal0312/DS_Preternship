@@ -81,7 +81,7 @@ entry2 = Entry(window,
                 relief=SUNKEN,
                 textvariable=inputExpr2).place(x=150,y=130)
 simpEva = Button(window,
-                    command=lambda:sim_eval(),
+                    command=lambda:[getInOne(),getInTwo(),sim_eval()],
                     activebackground = "LightSkyBlue1",
                     font=("consolas italic",11),
                     text="Evaluate!",
