@@ -45,13 +45,9 @@ mode = Button(window,
                 relief="flat",
                 justify=CENTER).place(x=21,y=20)
 
+# Labels
 # Simple Evaluation: input two expression strings, output whether they are equal to each other
-simpleEvaluation = Label(window,
-                            font=("consolas",11),
-                            text = "simple evaluation",
-                            width=20,
-                            bd=0.2,
-                            relief="flat").place(x=20,y=70)
+simpleEvaluation = Label(window,font=("consolas",11),text = "simple evaluation",width=20,bd=0.2,relief="flat").place(x=20,y=70)
 
 def sim_eval():
     expr1 = algebra.parse(inputExpr1.get())
@@ -64,7 +60,7 @@ input1 = Label(window,
                 font=("consolas",11),
                 text = "input1",
                 width=11,
-                bd=0.1,
+                bd=0.2,
                 bg="SlateGray1",
                 relief="flat").place(x=20,y=100)
 entry1 = Entry(window,
@@ -76,7 +72,7 @@ input2 = Label(window,
                 font=("consolas",11),
                 text = "input2",
                 width=11,
-                bd=0.1,
+                bd=0.2,
                 bg="SlateGray1",
                 relief="flat").place(x=20,y=130)
 entry2 = Entry(window,
@@ -89,18 +85,18 @@ simpEva = Button(window,
                     activebackground = "LightSkyBlue1",
                     font=("consolas italic",11),
                     text="Evaluate!",
-                    width=10,
-                    bd=0.12,
+                    width=11,
+                    bd=0.1,
                     bg="SlateGray1",
                     relief="flat",
-                    justify=CENTER).place(x=21,y=160)
+                    justify=CENTER).place(x=20,y=160)
 evalDisplay = Label(window,
-                font=("consolas",11),
-                textvariable=evalD,
-                width=43,
-                bd=4,
-                justify=LEFT,
-                relief="flat").place(x=115,y=160)
+                    font=("consolas",11),
+                    textvariable=evalD,
+                    width=43,
+                    bd=4,
+                    justify=LEFT,
+                    relief="flat").place(x=150,y=160)
 
 # Simplification: when clicked, display a simplied expression
 simplified = Button(window,command=simplification)
