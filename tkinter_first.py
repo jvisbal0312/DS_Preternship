@@ -14,6 +14,8 @@ modeInt = IntVar()
 inputExpr1 = StringVar()
 inputExpr2 = StringVar()
 evalD = StringVar()
+simpOutput1 = StringVar()
+simpOutput2 = StringVar()
     
 # Configurations 
 window.title("animated waveform")
@@ -99,10 +101,43 @@ evalDisplay = Label(window,
                     relief="flat").place(x=150,y=160)
 
 # Simplification: when clicked, display a simplied expression
-simplified = Button(window,command=simplification)
-def simplification():
-    '''
-    '''
+# Simplification: when clicked, display a simplied expression
+def simplify_one():
+    expr1 = algebra.parse(inputExpr1.get())
+    simpOutput1.set(expr1.simplify())
+def simplify_two():
+    expr2 = algebra.parse(inputExpr2.get())
+    simpOutput2.set(expr2.simplify())
+simplify1 = Button(window,
+                    command=simplify_one,
+                    activebackground = "LightSkyBlue1",
+                    font=("consolas italic",10),
+                    text="Simplify!",
+                    width=10,
+                    bg="SlateGray1",
+                    relief="flat",
+                    justify=CENTER).place(x=330,y=100)
+simplify2 = Button(window,
+                    command=simplify_two,
+                    activebackground = "LightSkyBlue1",
+                    font=("consolas italic",10),
+                    text="Simplify!",
+                    width=10,
+                    bg="SlateGray1",
+                    relief="flat",
+                    justify=CENTER).place(x=330,y=130)
+simplifyOutput1 = Label(window,
+                    font=("consolas",11),
+                    textvariable = simpOutput1,
+                    width=15,
+                    bd=0.2,
+                    relief="flat").place(x=450,y=100)
+simplifyOutput2 = Label(window,
+                    font=("consolas",11),
+                    textvariable = simpOutput2,
+                    width=15,
+                    bd=0.2,
+                    relief="flat").place(x=450,y=130)
 
 # Kmap (optional): when clicked, display Kmaps of the expressions
 kmap = Button(window,command=k_map)
