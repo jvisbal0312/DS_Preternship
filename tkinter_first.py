@@ -123,9 +123,7 @@ def Graph():
                           fill="RoyalBlue1",
                           font=("consolas bold",15))
     else:
-        rect = canvas.create_rectangle(40, 100, 1000, 300, 
-                                fill="gray35",
-                                outline="")
+        rect = canvas.create_rectangle(40, 100, 1000, 320,fill="gray35",outline="")
         canvas.create_text(230,70,
                            text="waveforms of the two input expressions",
                            fill="mint cream",
