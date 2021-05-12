@@ -122,9 +122,15 @@ def parseToOne(expr,integer=0):
             expr = expr.replace(i,"1")
     return expr
 
-def lineDisplay(t1,t2,TempExpr1,TempExpr2,seg=2):
+def lineDisplay(t1,t2,TempExpr1,TempExpr2,seg=2,x):
+# def lineDisplay(t1,t2,TempExpr,seg=2):
+	
+	
     startX = int(40 + (seg-1)*160)
     endX = int(40 + (seg)*160)
+	startY = int(75+x(150))
+	endY = int(150+x(150))
+	
     # Specify the starting_x and ending_x
     if t1 == 0: # prev1 = 0
         if type(TempExpr1) == FALSE: # prev1 = 0, curr1 = 0
@@ -370,8 +376,10 @@ def Graph():
             Temp2 = parseToZero(inputExpr2.get(),0)
             Temp2 = parseToOne(Temp2,0)
             TempExpr2 = algebra.parse(Temp2)
+
             
-            t1,t2 = lineDisplay(t1,t2,TempExpr1,TempExpr2,2)
+            t1,t2 = lineDisplay(t1,t2,TempExpr1,2, 0)
+            t1,t2 = lineDisplay(t1,t2,TempExpr2,2, 1)
             
             
             #Third line
