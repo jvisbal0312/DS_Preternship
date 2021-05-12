@@ -22,15 +22,15 @@
 
 - [x] Boolean equations
 - [x] Basic GUI
-- [ ] Animated GUI
+- [x] Animated GUI
 
 **Development Log**
 - [x] Add simple evaluation feature, Longqing, 05/02/21
 - [x] Add simplification feature, Longqing, 05/04/21
 - [x] Add animation description
-- [ ] 
+- [ ] Debug animation/lineDisplay function 
 
 **TODO List**
 
-- [ ] Waveform animation
+- [x] Waveform animation
 - [ ] 
